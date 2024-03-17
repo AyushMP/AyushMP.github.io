@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
 
     <!-- Navigation -->
     <nav>
+        <div class="left-text">Ayush's Portfolio</div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -20,8 +30,34 @@
 
     <!-- Home Section -->
     <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I'm showcasing my work here.</p>
+        <div class="text">
+            <h1>Welcome to My Portfolio</h1><br>
+            <p>Hi, <br>I'm Ayush Manish Pillay. I have my full interest in front-end development. <br>I am curretly learning both front-end and back-end development, <br>I thrive on turning ideas into reality and crafting digital solutions that make a difference.</p>
+        </div>
+        <div class="resized-image">
+            <img src="WhatsApp Image 2024-03-18 at 00.48.54_d8a1b8af.jpg" alt="Description of your image" class="resized-image">
+        </div>
+        
+            
+            <a href="Ayush_MP_Resume.pdf" class="resume-button">View Resume</a>
+            <script type="text/javascript">
+                const buttons = document.querySelectorAll('a');
+                buttons.forEach(btn => { 
+                    btn.addEventListener('click', function(e) {             
+                        let x = e.clientX - e.target.offsetLeft;
+                        let y = e.clientY - e.target.offsettop;
+                                           
+                        let ripples = document.createElement('span');              
+                        ripples.style.left = x + 'px';         
+                        ripples.style.top = y + 'px';               
+                        this.appendChild(ripples);               
+                        setTimeout(() => {
+                            ripples.remove()                
+                        }, 1000);                                
+                    })
+                })
+            </script>
+        
     </section>
 
     <!-- About Section -->

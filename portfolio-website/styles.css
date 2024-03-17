@@ -2,37 +2,170 @@
 body, h1, h2, h3, p, ul, li, form {
     margin: 0;
     padding: 0;
+    
 }
 
+.londrina-shadow-regular {
+    font-family: "Londrina Shadow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .basic-regular {
+    font-family: "Basic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 /* Basic styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: rgb(2, 2, 24);
+    
 }
 
 nav {
-    background-color: #333;
+    background-color: rgba(0, 0, 60, 1);
     color: #fff;
-    padding: 10px 20px; /* Adjusted padding */
-    text-align: right; /* Align the navigation items to the right */
+    padding: 10px 20px;
+    text-align: right;
+    height: 45px;
+    font-family: "Londrina Shadow", sans-serif;
+    position: fixed; /* Fix the navigation bar to the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure navigation is above other content */
+}
+
+/* Style for the additional text */
+.left-text {
+    float: left; /* Aligns the text to the right side */
+    margin-left: 150px; /* Adds spacing between the text and the navigation */
+    line-height: 45px; /* Centers the text vertically */
+    font-size: 22px;
+    font-family: Londrina Shadow, sans-serif;
 }
 
 nav ul {
     list-style-type: none;
+    text-align: right;
+    margin-right: 150px;
 }
 
 nav ul li {
     display: inline;
-    margin-left: 70px; /* Add spacing between navigation items */
+    margin-left: 50px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding to change button height */
+    height: 20px; /* Adjust height as needed */
+    font-size: 22px;
 }
+
+#home {
+    height: 100vh;
+    position: relative; /* Set position of the parent container */
+}
+
+#home .text {
+    position: absolute; /* Set absolute position for the text */
+    top: 40%; /* Position the text 50% from the top of the parent container */
+    left: 35%; /* Position the text 50% from the left of the parent container */
+    transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+    font-family: basic;
+}
+
+#home .text h1 {
+    font-size: 40px; /* Adjust the font size of the header text */
+}
+
+#home .text p {
+    font-size: 20px; /* Adjust the font size of the header text */
+}
+
+#home img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image is displayed as a block element */
+    margin-top: 20px; /* Adjust spacing from the text */
+}
+
+.resized-image {
+    width: 400px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    border-radius: 50%; /* Apply border-radius to create a circular cutout */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    position: absolute; /* Set absolute position for the text */
+    top: 14%; /* Position the text 50% from the top of the parent container */
+    right: 7%; /* Position the text 50% from the left of the parent container */
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #100085;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 40%; /* Adjust the distance from the bottom */
+    left: 14.5%; /* Position the button at the center horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+    
+}
+
+.resume-button:hover {
+    background-color: #555;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    Letter-spacing: 2px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #0162c8,#55e7fc);
+}
+
+a:nth-child(2){
+    background: linear-gradient(90deg, #755bea, #ff72c0);
+}
+
+span{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+ @keyframes animate{
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    100%{
+        width:500px;
+        height:500px;
+        opacity: 0;
+    }
+ }
 
 section {
     padding: 50px 0;
-    text-align: center;
+    text-align: left;
+    color: #fff;
 }
 
 section h2 {
