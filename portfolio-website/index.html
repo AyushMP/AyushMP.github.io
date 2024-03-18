@@ -31,39 +31,37 @@
     <!-- Home Section -->
     <section id="home">
         <div class="text">
-            <h1>Welcome to My Portfolio</h1><br>
+            <h1>Welcome to My Portfolio</h1>
             <p>Hi, <br>I'm Ayush Manish Pillay. I have my full interest in front-end development. <br>I am curretly learning both front-end and back-end development, <br>I thrive on turning ideas into reality and crafting digital solutions that make a difference.</p>
         </div>
         <div class="resized-image">
             <img src="pf-pic1.jpg" alt="Description of your image" class="resized-image">
         </div>
-        
-            
-            <a href="Ayush_MP_Resume.pdf" class="resume-button">View Resume</a>
-            <script type="text/javascript">
-                const buttons = document.querySelectorAll('a');
-                buttons.forEach(btn => { 
-                    btn.addEventListener('click', function(e) {             
-                        let x = e.clientX - e.target.offsetLeft;
-                        let y = e.clientY - e.target.offsettop;
-                                           
-                        let ripples = document.createElement('span');              
-                        ripples.style.left = x + 'px';         
-                        ripples.style.top = y + 'px';               
-                        this.appendChild(ripples);               
-                        setTimeout(() => {
-                            ripples.remove()                
-                        }, 1000);                                
-                    })
-                })
-            </script>
-        
+        <a href="Ayush_MP_Resume.pdf" class="resume-button">View Resume</a>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate web developer with a love for creating beautiful and functional websites.</p>
+        <div class="text">
+            <h2>About Me</h2>
+            <p>I'm a passionate web developer with a love for creating beautiful and functional websites.<br>So far I have worked on my projects using the following languages and tools:</p>
+        </div>
+        <div class="button-container">
+            <button class="custom-button tooltip"><img src="html5-logo-png-transparent-5.png" alt="Logo">HTML</button>
+            <button class="custom-button tooltip"><img src="PngItem_119330.png" alt="Logo">CSS</button>
+            <button class="custom-button tooltip"><img src="PngItem_2750983.png" alt="Logo">JavaScript</button>
+            <button class="custom-button tooltip"><img src="PngItem_1718131.png" alt="Logo">Python</button>
+            <button class="custom-button tooltip"><img src="PngItem_1746660.png" alt="Logo">Java</button>
+            <button class="custom-button tooltip"><img src="PngItem_6169316.png" alt="Logo">ReactJS</button>
+            <button class="custom-button tooltip"><img src="PngItem_3850968.png" alt="Logo">MongoDB</button>
+            <button class="custom-button tooltip"><img src="PngItem_1973343.png" alt="Logo">MySQL</button>
+            <button class="custom-button tooltip"><img src="PngItem_312155.png" alt="Logo">C</button>
+            <button class="custom-button tooltip"><img src="PngItem_5131577.png" alt="Logo">C++</button>
+            <button class="custom-button tooltip"><img src="PngItem_1419012.png" alt="Logo">Git</button>
+            <button class="custom-button tooltip"><img src="rasa_logo-2.png" alt="Logo">RASA</button>
+        </div>
+        
+
     </section>
 
     <!-- Portfolio Section -->
