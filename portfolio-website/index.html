@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="left-text">Ayush's Portfolio</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="text">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, <br>I'm <b>Ayush Manish Pillay</b>. I have my full interest in front-end development. <br>I thrive on turning ideas into reality and crafting digital solutions that make a difference.</p>
+            <div class="container">
+                <h1>I'm trying to become <span class="auto-type"></span></h1>
+            </div>
+        </div>
+        <div class="resized-image">
+            <img src="pics/pf-pic1.jpg" alt="Description of your image" class="resized-image">
+        </div>
+        <a href="Ayush_MP_Resume.pdf" class="resume-button">View Resume</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="text">
+            <h2>About Me</h2>
+            <ul>
+                <li>Proficient in building scalable and efficient full-stack applications, adept at integrating front-end technologies with complex server-side logic and database management.</li>
+                <li>Passionate about creating engaging and immersive gaming experiences.</li>
+                <li>Dedicated to designing intuitive and aesthetically pleasing user interfaces.</li>
+                <li>Keen on integrating AI to enhance user interactions and automate processes.</li>
+            </ul>
+        
+        </div>
+        <img src="pics\—Pngtree—developers are coding programs on_14867886.png" alt="Your Image Description">
+    </section>
+
+    <section id="skills">
+        <div class="text">
+            <h2>Skills</h2>
+            <p>List your skills here...</p>
+            <div class="button-container">
+                <button class="custom-button tooltip"><img src="pics/html5-logo-png-transparent-5.png" alt="Logo">HTML</button>
+                <button class="custom-button tooltip"><img src="pics/PngItem_119330.png" alt="Logo">CSS</button>
+                <button class="custom-button tooltip"><img src="pics/PngItem_2750983.png" alt="Logo">JavaScript</button>
+                <button class="custom-button tooltip"><img src="pics/PngItem_1718131.png" alt="Logo">Python</button>
+                <button class="custom-button tooltip"><img src="pics/PngItem_1746660.png" alt="Logo">Java</button>
+                <button class="custom-button tooltip"><img src="pics/PngItem_6169316.png" alt="Logo">ReactJS</button>
+                <button class="custom-button tooltip"><img src="pics/PngItem_3850968.png" alt="Logo">MongoDB</button>
+                <button class="custom-button tooltip"><img src="pics/PngItem_1973343.png" alt="Logo">MySQL</button>
+                <button class="custom-button tooltip"><img src="pics/PngItem_312155.png" alt="Logo">C</button>
+                <button class="custom-button tooltip"><img src="pics/PngItem_5131577.png" alt="Logo">C++</button>
+                <button class="custom-button tooltip"><img src="pics/PngItem_1419012.png" alt="Logo">Git</button>
+                <button class="custom-button tooltip"><img src="pics/rasa_logo-2.png" alt="Logo">RASA</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-item">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Description of project 1.</p>
+        </div>
+        <div class="projects-item">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+        </div>
+        <!-- Add more portfolio items as needed -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <!-- Script to add smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings:["Programmer","Front-End Developer","Game Developer","UI/UX Designer"],
+            typeSpeed:50,
+            backSpeed:50,
+            loop:true
+        })
+    </script>
+</body>
+</html>

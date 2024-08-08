@@ -1,0 +1,277 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.londrina-shadow-regular {
+    font-family: "Londrina Shadow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .basic-regular {
+    font-family: "Basic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/* Basic styling */
+body {
+    font-family: Basic, sans-serif;
+    background-color: #111c1f;
+    
+}
+
+nav {
+    background-color: #111c1f;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: right;
+    height: 45px;
+    font-family: basic, sans-serif;
+    position: fixed; /* Fix the navigation bar to the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure navigation is above other content */
+}
+
+/* Style for the additional text */
+.left-text {
+    float: left; /* Aligns the text to the right side */
+    margin-left: 150px; /* Adds spacing between the text and the navigation */
+    line-height: 45px; /* Centers the text vertically */
+    font-size: 22px;
+    font-family: basic, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    margin-right: 150px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 50px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding to change button height */
+    height: 20px; /* Adjust height as needed */
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #63949a; /* Change color on hover */
+}
+
+
+#home {
+    height: 100vh;
+    position: relative; /* Set position of the parent container */
+    z-index: 2; /* Ensure home section appears on top */
+}
+
+#home .text {
+    position: absolute; /* Set absolute position for the text */
+    top: 40%; /* Position the text 50% from the top of the parent container */
+    left: 35%; /* Position the text 50% from the left of the parent container */
+    transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+    font-family: basic;
+}
+
+#home .text h1 {
+    font-size: 40px; /* Adjust the font size of the header text */
+    color: #63949a;
+}
+
+#home .text p {
+    font-size: 20px; /* Adjust the font size of the header text */
+}
+
+#home img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image is displayed as a block element */
+    margin-top: 20px; /* Adjust spacing from the text */
+}
+
+.resized-image {
+    width: 400px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    border-radius: 50%; /* Apply border-radius to create a circular cutout */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    position: absolute; /* Set absolute position for the text */
+    top: 14%; /* Position the text 50% from the top of the parent container */
+    right: 7%; /* Position the text 50% from the left of the parent container */
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #63949a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 40%; /* Adjust the distance from the bottom */
+    left: 10%; /* Position the button at the center horizontally */
+    transition: color 0.3s ease;
+    
+}
+
+.resume-button:hover {
+    background-color: rgba(47, 79, 88, 0.467);
+}
+
+#about {
+    position: relative; /* Set absolute position for the text */
+    z-index: 1; /* Ensure home section appears on top */
+    height: 100vh;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+#about .text {
+    position: absolute; /* Set position to absolute */
+    top: 30%; /* Position the text vertically at 50% from the top */
+    left: 70%; /* Position the text horizontally at 50% from the left */
+    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+    text-align: left; /* Center align the text */
+}
+
+#about .text ul {
+    font-size: 20px; /* Adjust the font size of the text */
+    margin-top: 20px; /* Add margin at the top of the paragraph */
+}
+
+#about .text h2 {
+    font-size: 30px; /* Adjust the font size of the header text */
+    margin-bottom: 20px; /* Add margin at the bottom of the header */
+}
+
+#about img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: 500px; /* Fixed height */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: left; /* Center the image horizontally */
+    position: relative; /* Relative positioning within the #about section */
+    top: 10%; /* Adjust the top margin to move the image vertically */
+    left: 10%;
+}
+
+
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-column-gap: 130px; /* Adjust the horizontal gap between buttons */
+    grid-row-gap: 20px; /* Vertical gap between buttons */
+    position: absolute; /* Set position to relative for the container */
+    top: 120px; /* Adjust top position as needed */
+    left: 10%; /* Adjust left position as needed */
+}
+
+.custom-button {
+    background-color: #63949a; /* Green background */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s; /* Add transition for smooth hover effect */
+    width: 200px; /* Adjust the width as needed */
+}
+
+.custom-button img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; /* Adjust margin as needed */
+    width: 30px; /* Adjust the width of the logo */
+    height: 30px; /* Adjust the height of the logo */
+}
+
+
+.custom-button:hover {
+    background-color: rgba(47, 79, 88, 0.467); /* Darker green background on hover */
+    
+}
+
+#skills {
+    position: relative; /* Set absolute position for the text */
+    z-index: 1; /* Ensure home section appears on top */
+    height: 100vh;
+}
+
+#skills .text{ /* Added styles for the Skills section */
+    position: absolute; /* Set position to absolute */
+    top: 20%; /* Position the text vertically at 50% from the top */
+    left: 16%; /* Position the text horizontally at 50% from the left */
+    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+    text-align: left; /* Center align the text */
+}
+
+
+#skills .text h2{ /* Added styles for the Skills section */
+    font-size: 30px; /* Adjust the font size of the text */
+    margin-bottom: 20px; /* Add margin at the top of the paragraph */
+}
+
+
+#skills .text p{ /* Added styles for the Skills section */
+    font-size: 20px; /* Adjust the font size of the header text */
+    margin-top: 20px;
+}
+
+section {
+    padding: 50px 0;
+    text-align: left;
+    color: #fff;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+.projects-item {
+    margin-bottom: 30px;
+}
+
+.projects-item img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
